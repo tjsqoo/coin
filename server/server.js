@@ -11,10 +11,11 @@ const API_URL = 'https://api.upbit.com/';
 var marketList = [];
 
 var startStatus = {
-  INIT: 0,
+  INIT:               0,
   LOAD_MARKET_INFO:   1,
   LOAD_COMPLETE:      2
 }
+
 var fsmStatus = startStatus.INIT;
 startFSM();
 
